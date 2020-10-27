@@ -49,5 +49,12 @@ Steps in eCockpit!:
 - On the left hand side of the program in the Address Space window, select the address space including the word CODESYSSPV3...
 - Go down the tree: Root/Objects/DeviceSet/WAGO 750-8100.../Resources/Application/GlobalVars/IoConfig_Globals_Mapping
 - Here you should see the formerly in eCockpit! selected IOs
-
+- Select a IO and look to the attributes window on the top right
+- The first point shows the NodeID (something like `ns=1;s=abc`)
+- Add some lines to your python code
+    ```python
+    myIO = client.get_node("ns=1;s=abc")
+    print(myIO.get_value())
+    ```
+- Now the current value of the IO should be printed to the console
 More coming soon 
