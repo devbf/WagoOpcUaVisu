@@ -57,4 +57,10 @@ Steps in eCockpit!:
     print(myIO.get_value())
     ```
 - Now the current value of the IO should be printed to the console
+- Make sure that the IO you have chosen has read and write permission (you can see this in the Symbol Configuration when you look at the little arrow symbol, this should be a bidirectional arrow)
+- Now you can write to your IO 
+    ```pythoon
+    myIO.set_value(True) # if it is of type boolean
+    ```
+
 More coming soon 
